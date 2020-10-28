@@ -58,7 +58,7 @@ export default class Deck {
   }
 
   public topCard(pile: string): Card | null {
-    return this.cards.reduce<Card|null>((top: Card | null, card: Card) => {
+    return this.cards.reduce<Card | null>((top: Card | null, card: Card) => {
       if (card.pile === pile && (!top || card.position > top.position)) {
         return card;
       }

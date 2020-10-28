@@ -1,7 +1,7 @@
 const { DefinePlugin } = require("webpack");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ESLintPlugin = require('eslint-webpack-plugin');
+const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -28,6 +28,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.ejs",
     }),
-    new ESLintPlugin({ extensions: 'ts' })
+    new ESLintPlugin({ extensions: "ts" }),
   ],
 };
